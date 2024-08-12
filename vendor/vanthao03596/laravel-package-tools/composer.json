@@ -1,0 +1,53 @@
+{
+    "name": "vanthao03596/laravel-package-tools",
+    "description": "Tools for creating Laravel packages",
+    "keywords": [
+        "spatie",
+        "laravel-package-tools"
+    ],
+    "homepage": "https://github.com/vanthao03596/laravel-package-tools",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Freek Van der Herten",
+            "email": "freek@spatie.be",
+            "role": "Developer"
+        },
+        {
+            "name": "Pham Thao",
+            "email": "phamthao03596@gmail.com",
+            "role": "Developer"
+        }
+
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/contracts": "^6.0|^7.0|^8.0",
+        "mockery/mockery": "^1.4"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0|^5.0|^6.0",
+        "phpunit/phpunit": "^9.3",
+        "spatie/test-time": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vanthao03596\\LaravelPackageTools\\": "src",
+            "Vanthao03596\\LaravelPackageTools\\Database\\Factories\\": "database/factories"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vanthao03596\\LaravelPackageTools\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --colors=always",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
